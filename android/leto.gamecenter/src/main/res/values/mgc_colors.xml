@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mgc_sdk_login_bg_translucence_black">#b0000000</color>
+    <color name="mgc_sdk_gray_d8">#d8d8d8</color>
+    <color name="mgc_sdk_blues">#4c6791</color>
+    <color name="mgc_sdk_text_blacks">#333333</color>
+    <color name="mgc_sdk_grayc3">#C3C3C3</color>
+    <color name="mgc_sdk_black2a">#2A2A2A</color>
+    <color name="mgc_sdk_orange">#FF8400</color>
+    <color name="mgc_sdk_gray7f">#7F7C7C</color>
+    <color name="mgc_sdk_green">#00d2e1</color>
+    <color name="mgc_sdk_bluef8">#2475f8</color>
+    <color name="mgc_sdk_blue_load">#5172e1</color>
+    <color name="mgc_sdk_blue3e">#3e4fb7</color>
+    <color name="mgc_sdk_bluef5">#4d70f5</color>
+    <color name="mgc_sdk_black">#000000</color>
+    <color name="mgc_sdk_black2">#666666</color>
+    <color name="mgc_sdk_white">#ffffff</color>
+    <color name="mgc_sdk_red">#ff0000</color>
+    <color name="mgc_sdk_yellow_d2">#f6c844</color>
+    <color name="mgc_sdk_popup_bg_translucence">#b9999999</color>
+    <color name="mgc_sdk_black_3">#333333</color>
+
+    <color name="mgc_sdk_text_lowgray">#999999</color>
+    <color name="mgc_sdk_bg_gray">#eeeeee</color>
+    <color name="mgc_sdk_bg_silver_gray">#f3f4f9</color>
+    <color name="mgc_sdk_bg_blue">#264ac3</color>
+    <color name="mgc_sdk_greenss">#00c3ba</color>
+    <color name="mgc_sdk_blue3">#21A6EF</color>
+    <color name="mgc_sdk_gray_white">#F8F8F8</color>
+</resources>

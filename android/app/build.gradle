@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.leto.game.sample"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'pub.devrel:easypermissions:1.0.1'
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation project(':leto.gamecenter')
+}
+
+configurations.all {
+// 动态版本(版本号会变)
+    resolutionStrategy.cacheDynamicVersionsFor 10, 'minutes'
+// 变化模块(版本号永远不变,但是内容发生变化)
+    resolutionStrategy.cacheChangingModulesFor 0, 'minutes'
+}

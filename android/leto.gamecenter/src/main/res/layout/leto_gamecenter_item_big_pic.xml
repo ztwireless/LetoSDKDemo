@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#f5f5f5"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="13dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/mgc_sdk_black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Test"/>
+
+        <com.leto.game.base.view.RoundedImageView
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:riv_corner_radius="5dp"
+            app:riv_mutate_background="false"
+            app:riv_oval="false"/>
+
+        <com.leto.game.base.view.RoundedImageView
+            android:id="@+id/icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/picture"
+            app:riv_corner_radius="25dp"
+            app:riv_mutate_background="false"
+            app:riv_oval="false"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/mgc_sdk_black"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@id/icon"
+            app:layout_constraintTop_toTopOf="@id/icon"
+            tools:text="Test"/>
+
+        <TextView
+            android:id="@+id/play_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/mgc_sdk_text_lowgray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/icon"
+            app:layout_constraintStart_toEndOf="@id/icon"
+            tools:text="多少人玩过"/>
+
+        <com.ledong.lib.minigame.view.PlayNowButton
+            android:id="@+id/open_btn"
+            android:layout_width="53dp"
+            android:layout_height="23dp"
+            android:background="@drawable/leto_minigame_play_btn_bg"
+            android:gravity="center"
+            android:text="@string/leto_btn_play_now"
+            android:textColor="#3D9AF0"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/icon"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

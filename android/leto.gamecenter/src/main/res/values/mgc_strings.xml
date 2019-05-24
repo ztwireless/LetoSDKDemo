@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">分类</string>
+    <string name="ranking">排行</string>
+    <string name="new_game">新游</string>
+    <string name="must_play_new_game">必玩新游</string>
+    <string name="recommended">推荐</string>
+    <string name="w_play_num">万人在玩</string>
+    <string name="leaderboard">排行榜</string>
+    <string name="game_center">游戏中心</string>
+</resources>

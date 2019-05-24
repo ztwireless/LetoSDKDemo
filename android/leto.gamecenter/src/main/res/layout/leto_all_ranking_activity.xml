@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mgc_sdk_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/leto_minigame_include_common_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0f0f0"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <com.leto.game.base.view.tablayout.CommonTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@color/mgc_sdk_white"
+            android:layout_marginLeft="11dp"
+            app:tl_tab_padding="7dp"
+            app:tl_indicator_margin_right="7dp"
+            app:tl_indicator_margin_left="7dp"
+            app:tl_iconVisible="false"
+            app:tl_indicator_color="@color/mgc_sdk_bluef8"
+            app:tl_indicator_height="2dp"
+            app:tl_tab_space_equal="true"
+            app:tl_textBold="SELECT"
+            app:tl_textSelectColor="@color/mgc_sdk_text_blacks"
+            app:tl_textUnselectColor="@color/mgc_sdk_black2"
+            app:tl_textsize="15sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddddd"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mgc_sdk_white" />
+
+</LinearLayout>

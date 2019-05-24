@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 第二种大图样式, 用在推荐列表里 -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="4dp">
+
+    <FrameLayout
+        android:id="@+id/outline"
+        android:layout_width="match_parent"
+        android:layout_height="211dp">
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/info_bar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom">
+
+            <com.leto.game.base.view.RoundedImageView
+                android:id="@+id/icon"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:riv_corner_radius="21dp"
+                app:riv_mutate_background="false"
+                app:riv_oval="false"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="1dp"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/mgc_sdk_white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@id/icon"
+                app:layout_constraintTop_toTopOf="@id/icon"
+                tools:text="Test"/>
+
+            <TextView
+                android:id="@+id/play_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="8dp"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@color/mgc_sdk_white"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="@id/icon"
+                app:layout_constraintStart_toEndOf="@id/icon"
+                tools:text="多少人玩过"/>
+
+            <com.ledong.lib.minigame.view.PlayNowButton
+                android:id="@+id/open_btn"
+                android:layout_width="53dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/leto_minigame_play_btn_bg_solid"
+                android:gravity="center"
+                android:text="@string/leto_btn_play_now"
+                android:textColor="#3D9AF0"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/icon"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#f5f5f5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <com.leto.game.base.view.tablayout.CommonTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@color/mgc_sdk_white"
+            android:layout_marginLeft="11dp"
+            app:tl_tab_padding="7dp"
+            app:tl_indicator_margin_right="7dp"
+            app:tl_indicator_margin_left="7dp"
+            app:tl_iconVisible="false"
+            app:tl_indicator_color="@color/mgc_sdk_bluef8"
+            app:tl_indicator_height="2dp"
+            app:tl_tab_space_equal="true"
+            app:tl_textBold="SELECT"
+            app:tl_textSelectColor="@color/mgc_sdk_black"
+            app:tl_textUnselectColor="@color/mgc_sdk_black2"
+            app:tl_textsize="15sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="11dp"
+            android:drawableRight="@drawable/leto_minigame_right_arrow"
+            android:drawablePadding="3dp"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@string/leto_gamecenter_view_all"
+            android:textColor="@color/mgc_sdk_black2"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddddd"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mgc_sdk_white" />
+</LinearLayout>

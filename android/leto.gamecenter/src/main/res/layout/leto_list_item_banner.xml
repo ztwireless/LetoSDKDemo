@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:background="@color/mgc_sdk_white"
+    android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    >
+
+    <com.leto.game.base.view.RoundedImageView
+        android:id="@+id/iv_banner_img"
+        android:layout_width="322dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="10dp"
+        app:riv_mutate_background="false"
+        app:riv_oval="false"
+        />
+
+</LinearLayout>

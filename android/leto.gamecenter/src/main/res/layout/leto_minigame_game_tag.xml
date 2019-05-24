@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_game_tag1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:maxWidth="60dp"
+    android:textSize="10sp"
+    android:textColor="#3D9AF0"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"
+    />

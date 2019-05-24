@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+    
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/leto_btn_category"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/mgc_sdk_black_3"
+        android:textSize="16sp"
+        tools:text="Test"/>
+</LinearLayout>

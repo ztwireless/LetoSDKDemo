@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category">Category</string>
+    <string name="ranking">Ranking</string>
+    <string name="new_game">New Game</string>
+    <string name="must_play_new_game">New Game</string>
+    <string name="recommended">Recommended</string>
+    <string name="w_play_num">0k Players</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="game_center">Game Center</string>
+</resources>

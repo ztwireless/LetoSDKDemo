@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="edit_style" parent="android:style/Theme.Dialog">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@drawable/sample_edit_background</item>
+        <item name="android:textColor">@color/mgc_sdk_black</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColorHint">#999999</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/edit_height</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+    </style>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_start_more"
+            android:layout_width="240dp"
+            android:layout_height="42dp"
+
+            android:layout_gravity="center_horizontal"
+            android:background="@color/mgc_sdk_blues"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="启动更多游戏"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_game_id"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/sample_edit_background"
+            android:gravity="start|center_vertical"
+            android:hint="请输入游戏ID"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/mgc_sdk_black"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_start_game"
+            android:layout_width="100dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/mgc_sdk_blues"
+            android:gravity="center"
+            android:text="启动小游戏"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_sync_mobile"
+            android:layout_width="240dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/mgc_sdk_blues"
+            android:gravity="center"
+            android:text="进入账号同步"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="说明：渠道有自由账号系统的可以进行账号同步"
+            android:textColor="@color/mgc_sdk_red"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
